@@ -20,4 +20,4 @@ def stazione():
             stazionefile.write(str(record))
         return "ok"
 
-app.run(host="localhost", port=5000)
+app.run(host="0.0.0.0", debug=False, port=environ.get("PORT", 8080))
