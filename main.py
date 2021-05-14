@@ -19,5 +19,3 @@ def stazione():
         with open("stazione.txt", "w") as stazionefile:
             stazionefile.write(str(record))
         return "ok"
-
-app.run(host="0.0.0.0", port=8080)
