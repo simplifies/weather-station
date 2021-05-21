@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-family: Arial;
+        overflow-y: hidden;
+        color: #ffffff;
+      }
+
+      img {
+        position: absolute;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+      }
+
+      #rcorners2 {
+        margin-top: 9rem;
+        border-radius: 25px;
+        border: 5px solid #ffffff;
+        padding: 20px;
+        width: 270px;
+        height: 245px;
+      }
+      @media screen and (max-width: 768px) {
+        #rcorners2 h1 {
+          font-size: 3rem;
+        }
+        #rcorners2 h2 {
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+    <img
+      src="https://cdn.discordapp.com/attachments/837704386796060762/842775948477726790/sito.jpg"
+      alt=""
+    />
+    <div id="rcorners2">
+      <center>
+        <h1>Admin Panel</h1>
+        <h2>Temperatura: {{ temperatura + " C°" }}</h2>
+        <h2>Uptime: {{ uptime }}</h2>
+    </center>
+    </div>
+  </head>
+</html>
